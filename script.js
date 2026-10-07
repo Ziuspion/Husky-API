@@ -8,7 +8,7 @@ const url = 'https://dog.ceo/api/breed/husky/images/random'
 // Pegando os elementos do HTML
 
 // - Imagem pelo seu ID
-const fotoCachorro = document.getElementById('fotoCachorro')
+const fotoHusky = document.getElementById('fotoHusky')
 
 // - Botão pelo seu ID
 const btnNovaFoto = document.getElementById('btnNovaFoto')
@@ -25,7 +25,7 @@ async function buscarFoto() {
     // Mostrar no console o que a API retornou
     console.log(dados)
     // Alteramos o endereço da imagem no HTML
-    fotoCachorro.src = dados.message;
+    fotoHusky.src = dados.message;
 }
 
 // ===================================================
